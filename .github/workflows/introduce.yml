@@ -1,0 +1,17 @@
+name: 자기소개
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-introduction:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: 자기소개 문구
+        run: echo "코딩 초보입니다. 자기소개는 생략합니다."
